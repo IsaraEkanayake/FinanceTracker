@@ -1,0 +1,27 @@
+config:
+  target: "http://localhost:5000/api/transaction"  # Base URL without trailing slash
+  phases:
+    - duration: 20  # Run the test for 20 seconds
+      arrivalRate: 5  # Start with 5 new users per second
+      rampTo: 30  # Gradually increase load to 30 users per second
+
+scenarios:
+  - name: "Create Transactions"
+    flow:
+      - post:
+          url: "/create"  # Correct route format
+          json:
+            type: "income"
+            amount: 500
+            currency: "USD"
+            category: "Salary"
+            tags: ["job"]
+          headers:
+            Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Y2Q2MWJmZjUzYmViMGM5ZDk3NzBkNCIsImVtYWlsIjoicm95QGdtYWlsLmNvbSIsInJvbGUiOiJ0ZXN0IiwiaWF0IjoxNzQxNTIxMzA1LCJleHAiOjE3NDE2MDc3MDV9.dxnhhDa9naLFsPcJwdifbMn1uTKk0B5MTXl88sE-3_U"
+
+  - name: "Get All Transactions"
+    flow:
+      - get:
+          url: "/getall"  # Correct route format
+          headers:
+            Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Y2Q2MWJmZjUzYmViMGM5ZDk3NzBkNCIsImVtYWlsIjoicm95QGdtYWlsLmNvbSIsInJvbGUiOiJ0ZXN0IiwiaWF0IjoxNzQxNTIxMzA1LCJleHAiOjE3NDE2MDc3MDV9.dxnhhDa9naLFsPcJwdifbMn1uTKk0B5MTXl88sE-3_U"
