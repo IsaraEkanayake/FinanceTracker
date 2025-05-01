@@ -14,7 +14,7 @@ exports.verifyToken = (req, res, next) => {
       return res.status(401).json({ message: "Unauthorized!" }); // ✅ Matching test case expectation
     }
 
-    
+  
     
     req.user = { id: decoded.id, role: decoded.role }; // Store user details in req.user
     next();
