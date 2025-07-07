@@ -35,6 +35,6 @@ Personal Finance Tracker Backend is a secure and scalable REST API built with No
 ## Technologies Used
 - **Express js**
 - **Node js**
-- *Jwt**
+- **Jwt**
 - **Postman** (for build and dependency management)
 
