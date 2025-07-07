@@ -10,34 +10,27 @@
 </div>
 
 ## Overview
-Personal Finance Tracker helps users monitor and manage income, expenses, budgets, and savings goals effectively.
+Personal Finance Tracker Backend is a secure and scalable REST API built with Node.js, Express, MongoDB, and JWT. It allows users to manage income, expenses, budgets, and transactions, with features like goal setting and transaction categorization — all while ensuring data privacy and smooth authentication.
 
-## Features
+## ✨ Features
 
-- <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" width="16" height="16" alt="Add Icon" /> Add, edit, and delete transactions  
-- <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" width="16" height="16" alt="Chart Icon" /> Visual spending trends  
-- <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" width="16" height="16" alt="Budget Icon" /> Set budgets & overspending alerts  
-- <img src="https://cdn-icons-png.flaticon.com/512/2637/2637799.png" width="16" height="16" alt="Savings Icon" /> Track savings goals  
-- <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="16" height="16" alt="Export Icon" /> Export reports  
+- 🔐 **User Authentication & Authorization**
+  - Secure user registration and login
+  - Role-based access control
+  - JWT-based authentication
 
-## Screenshots
+  - 🎯 **Goal Management**
+  - Create, update, and track financial goals
+  - Monitor progress with reminders
+  - Categorize and prioritize goals
 
-### Dashboard Overview
-![Dashboard Overview](assets/dashboard-overview.png)
+- 💸 **Transaction Management**
+  - Add, edit, and delete income and expense transactions
+  - Categorize transactions by type and account
+  - View and filter transaction history
 
-### Add Transaction Form
-![Add Transaction](assets/add-transaction.png)
+- 📊 **Financial Insights**
+  - Track budgets with alerts
+  - Generate summary reports and analytics
+  - Receive real-time updates on spending and saving
 
-### Spending Analytics Chart
-![Spending Analytics](assets/spending-analytics.png)
-
-## Technologies Used
-- java
-- OSGI Framework
-  
-
-## Installation / Setup Instructions
-
-1. <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="16" height="16" alt="Git" /> Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/personal-finance-tracker.git
